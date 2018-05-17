@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="top"
+        android:background="#c5f663"
+        android:orientation="vertical">
+        <ImageView
+
+            android:layout_width="190dp"
+            android:layout_height="142dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="50dip"
+            android:background="@drawable/pizza"
+            android:paddingBottom="100dip"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/txtcontact"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dip"
+
+            android:text="Address :
+            NORDSEE GmbH Sophienblatt 20
+            24103 Kiel
+            Phone number: 56982541"
+            android:textSize="18dip" />
+
+        <Button
+            android:id="@+id/btn_googlemap"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:background="@android:drawable/button_onoff_indicator_on"
+            android:text="Shop on Google Map" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="pizzastuff2.ed.kiel.finalpizzaorder">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBM8A03BfvjwH4clNU7r-DKmUJW2Vnf_QA" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_FinalPizzaOrder">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".OrderPizza"
+            android:label="OrderPizza" >
+        </activity>
+        <activity android:name=".Contact"
+            android:label="Contact Us" >
+        </activity>
+        <activity android:name=".MapsActivity"
+            android:label="Contact Us" >
+        </activity>
+    </application>
+
+</manifest>
